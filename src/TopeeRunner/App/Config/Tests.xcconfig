@@ -1,0 +1,6 @@
+#include "../../../../config/Tests.xcconfig"
+
+INFOPLIST_FILE = $(SRCROOT)/App/Support/Tests/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = com.github.topee.TopeeRunnerTests
+PRODUCT_NAME = $(TARGET_NAME)
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/TopeeRunner.app/Contents/MacOS/TopeeRunner

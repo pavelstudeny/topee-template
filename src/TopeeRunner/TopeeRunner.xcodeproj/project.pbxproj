@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		803D734721344A7A004DBDA2 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1C7E4210F3BE0008AC6BD /* Topee.framework */; };
+		803D734821344A7A004DBDA2 /* Topee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1C7E4210F3BE0008AC6BD /* Topee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF80A78A210F2F55002C6F3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF80A789210F2F55002C6F3F /* Cocoa.framework */; };
+		EF80A78F210F2F55002C6F3F /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF80A78E210F2F55002C6F3F /* SafariExtensionViewController.swift */; };
+		EF80A792210F2F55002C6F3F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF80A790210F2F55002C6F3F /* SafariExtensionViewController.xib */; };
+		EF80A797210F2F55002C6F3F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EF80A796210F2F55002C6F3F /* ToolbarItemIcon.pdf */; };
+		EF80A79B210F2F55002C6F3F /* TopeeRunner.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF80A787210F2F55002C6F3F /* TopeeRunner.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EFA1C7E5210F3BE0008AC6BD /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA1C7E4210F3BE0008AC6BD /* Topee.framework */; };
+		EFB6939A211037BF00F402FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB6938E211037BE00F402FC /* MainMenu.xib */; };
+		EFB6939C211037BF00F402FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB69392211037BE00F402FC /* Assets.xcassets */; };
+		EFB6939D211037BF00F402FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB69393211037BE00F402FC /* AppDelegate.swift */; };
+		EFC86ECB211309030049CD8B /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC86ECA211309030049CD8B /* SafariExtensionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF80A737210F281F002C6F3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF80A71E210F281D002C6F3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF80A725210F281D002C6F3F;
+			remoteInfo = TopeeRunner;
+		};
+		EF80A799210F2F55002C6F3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF80A71E210F281D002C6F3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF80A786210F2F55002C6F3F;
+			remoteInfo = TopeeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		803D734921344A7A004DBDA2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				803D734821344A7A004DBDA2 /* Topee.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A79F210F2F55002C6F3F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF80A79B210F2F55002C6F3F /* TopeeRunner.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6234BA2124705C001B77C2 /* Copy topee-iframe-resources */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = html;
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy topee-iframe-resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF80A726210F281D002C6F3F /* TopeeRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopeeRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80A787210F2F55002C6F3F /* TopeeRunner.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; name = TopeeRunner.appex; path = TopeeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF80A789210F2F55002C6F3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EF80A78E210F2F55002C6F3F /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		EF80A791210F2F55002C6F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		EF80A793210F2F55002C6F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF80A796210F2F55002C6F3F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		EF80A798210F2F55002C6F3F /* Appex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Appex.entitlements; sourceTree = "<group>"; };
+		EF80A7A4210F3259002C6F3F /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		EF80A7A5210F3259002C6F3F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EF80A7A6210F3259002C6F3F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EFA1C7E4210F3BE0008AC6BD /* Topee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Topee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB69383211037BE00F402FC /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		EFB69384211037BE00F402FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EFB69385211037BE00F402FC /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EFB6938D211037BE00F402FC /* TopeeRunner.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TopeeRunner.entitlements; sourceTree = "<group>"; };
+		EFB6938F211037BE00F402FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EFB69390211037BE00F402FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB69392211037BE00F402FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFB69393211037BE00F402FC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFC86ECA211309030049CD8B /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF80A723210F281D002C6F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803D734721344A7A004DBDA2 /* Topee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A733210F281F002C6F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A784210F2F55002C6F3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA1C7E5210F3BE0008AC6BD /* Topee.framework in Frameworks */,
+				EF80A78A210F2F55002C6F3F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80667EF02146BED800562E86 /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = img;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EF80A71D210F281D002C6F3F = {
+			isa = PBXGroup;
+			children = (
+				EFB69381211037BE00F402FC /* App */,
+				EF80A78B210F2F55002C6F3F /* Appex */,
+				EF80A788210F2F55002C6F3F /* Frameworks */,
+				EF80A727210F281D002C6F3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF80A727210F281D002C6F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A726210F281D002C6F3F /* TopeeRunner.app */,
+				EF80A787210F2F55002C6F3F /* TopeeRunner.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF80A788210F2F55002C6F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFA1C7E4210F3BE0008AC6BD /* Topee.framework */,
+				EF80A789210F2F55002C6F3F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF80A78B210F2F55002C6F3F /* Appex */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A7A2210F3248002C6F3F /* Config */,
+				FD66CF7D2110515E003E0819 /* Resources */,
+				EF80A7A0210F3230002C6F3F /* Sources */,
+				EF80A7A1210F323E002C6F3F /* Support */,
+			);
+			path = Appex;
+			sourceTree = "<group>";
+		};
+		EF80A7A0210F3230002C6F3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFC86ECA211309030049CD8B /* SafariExtensionHandler.swift */,
+				EF80A78E210F2F55002C6F3F /* SafariExtensionViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EF80A7A1210F323E002C6F3F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A790210F2F55002C6F3F /* SafariExtensionViewController.xib */,
+				EF80A793210F2F55002C6F3F /* Info.plist */,
+				EF80A798210F2F55002C6F3F /* Appex.entitlements */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EF80A7A2210F3248002C6F3F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EF80A7A4210F3259002C6F3F /* Common.xcconfig */,
+				EF80A7A6210F3259002C6F3F /* Debug.xcconfig */,
+				EF80A7A5210F3259002C6F3F /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EFB69381211037BE00F402FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EFB69382211037BE00F402FC /* Config */,
+				EFB69391211037BE00F402FC /* Sources */,
+				EFB69389211037BE00F402FC /* Support */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EFB69382211037BE00F402FC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EFB69383211037BE00F402FC /* Common.xcconfig */,
+				EFB69384211037BE00F402FC /* Debug.xcconfig */,
+				EFB69385211037BE00F402FC /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EFB69389211037BE00F402FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EFB6938C211037BE00F402FC /* Sources */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EFB6938C211037BE00F402FC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFB69392211037BE00F402FC /* Assets.xcassets */,
+				EFB6938D211037BE00F402FC /* TopeeRunner.entitlements */,
+				EFB69390211037BE00F402FC /* Info.plist */,
+				EFB6938E211037BE00F402FC /* MainMenu.xib */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFB69391211037BE00F402FC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFB69393211037BE00F402FC /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FD6234A421246C91001B77C2 /* html */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		FD66CF7D2110515E003E0819 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80667EF02146BED800562E86 /* img */,
+				FD6234A421246C91001B77C2 /* html */,
+				EF80A796210F2F55002C6F3F /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF80A725210F281D002C6F3F /* TopeeRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80A73F210F281F002C6F3F /* Build configuration list for PBXNativeTarget "TopeeRunner" */;
+			buildPhases = (
+				EF80A722210F281D002C6F3F /* Sources */,
+				EF80A723210F281D002C6F3F /* Frameworks */,
+				EF80A724210F281D002C6F3F /* Resources */,
+				EF80A79F210F2F55002C6F3F /* Embed App Extensions */,
+				803D734921344A7A004DBDA2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF80A79A210F2F55002C6F3F /* PBXTargetDependency */,
+			);
+			name = TopeeRunner;
+			productName = TopeeRunner;
+			productReference = EF80A726210F281D002C6F3F /* TopeeRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF80A735210F281F002C6F3F /* DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80A742210F281F002C6F3F /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildPhases = (
+				EF80A732210F281F002C6F3F /* Sources */,
+				EF80A733210F281F002C6F3F /* Frameworks */,
+				EF80A734210F281F002C6F3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF80A738210F281F002C6F3F /* PBXTargetDependency */,
+			);
+			name = DemoTests;
+			productName = DemoTests;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF80A786210F2F55002C6F3F /* Appex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF80A79C210F2F55002C6F3F /* Build configuration list for PBXNativeTarget "Appex" */;
+			buildPhases = (
+				EF80A783210F2F55002C6F3F /* Sources */,
+				EF80A784210F2F55002C6F3F /* Frameworks */,
+				EF1A65CA21188BB20021E013 /* Wrap Content Scripts */,
+				EF80A785210F2F55002C6F3F /* Resources */,
+				FD63C18D212C090400C8F21A /* ShellScript */,
+				FD6234BA2124705C001B77C2 /* Copy topee-iframe-resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Appex;
+			productName = Appex;
+			productReference = EF80A787210F2F55002C6F3F /* TopeeRunner.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF80A71E210F281D002C6F3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Topee;
+				TargetAttributes = {
+					EF80A725210F281D002C6F3F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EF80A735210F281F002C6F3F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF80A725210F281D002C6F3F;
+					};
+					EF80A786210F2F55002C6F3F = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EF80A721210F281D002C6F3F /* Build configuration list for PBXProject "TopeeRunner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF80A71D210F281D002C6F3F;
+			productRefGroup = EF80A727210F281D002C6F3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF80A725210F281D002C6F3F /* TopeeRunner */,
+				EF80A735210F281F002C6F3F /* DemoTests */,
+				EF80A786210F2F55002C6F3F /* Appex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF80A724210F281D002C6F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB6939C211037BF00F402FC /* Assets.xcassets in Resources */,
+				EFB6939A211037BF00F402FC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A734210F281F002C6F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A785210F2F55002C6F3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF80A797210F2F55002C6F3F /* ToolbarItemIcon.pdf in Resources */,
+				EF80A792210F2F55002C6F3F /* SafariExtensionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF1A65CA21188BB20021E013 /* Wrap Content Scripts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Wrap Content Scripts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Wraps content scripts to run at document end\n\"${SRCROOT}/../Framework/Scripts/run-at-document-end.sh\" \\\n\"${SRCROOT}/../../dummy/content.js\" > \"${SRCROOT}/Appex/Resources/content.js\"\n";
+		};
+		FD63C18D212C090400C8F21A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo Copying pam resources ...\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/html/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/html\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/_locales/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/_locales\nrsync -rtv $PROJECT_DIR/../../dummy/img/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/img\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF80A722210F281D002C6F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB6939D211037BF00F402FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A732210F281F002C6F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF80A783210F2F55002C6F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC86ECB211309030049CD8B /* SafariExtensionHandler.swift in Sources */,
+				EF80A78F210F2F55002C6F3F /* SafariExtensionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF80A738210F281F002C6F3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF80A725210F281D002C6F3F /* TopeeRunner */;
+			targetProxy = EF80A737210F281F002C6F3F /* PBXContainerItemProxy */;
+		};
+		EF80A79A210F2F55002C6F3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF80A786210F2F55002C6F3F /* Appex */;
+			targetProxy = EF80A799210F2F55002C6F3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF80A790210F2F55002C6F3F /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF80A791210F2F55002C6F3F /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+		EFB6938E211037BE00F402FC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB6938F211037BE00F402FC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF80A73D210F281F002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EF80A73E210F281F002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EF80A740210F281F002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB69384211037BE00F402FC /* Debug.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+			};
+			name = Debug;
+		};
+		EF80A741210F281F002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB69385211037BE00F402FC /* Release.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+			};
+			name = Release;
+		};
+		EF80A743210F281F002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EF80A744210F281F002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EF80A79D210F2F55002C6F3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A7A6210F3259002C6F3F /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EF80A79E210F2F55002C6F3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF80A7A5210F3259002C6F3F /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF80A721210F281D002C6F3F /* Build configuration list for PBXProject "TopeeRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A73D210F281F002C6F3F /* Debug */,
+				EF80A73E210F281F002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80A73F210F281F002C6F3F /* Build configuration list for PBXNativeTarget "TopeeRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A740210F281F002C6F3F /* Debug */,
+				EF80A741210F281F002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80A742210F281F002C6F3F /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A743210F281F002C6F3F /* Debug */,
+				EF80A744210F281F002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF80A79C210F2F55002C6F3F /* Build configuration list for PBXNativeTarget "Appex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF80A79D210F2F55002C6F3F /* Debug */,
+				EF80A79E210F2F55002C6F3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF80A71E210F281D002C6F3F /* Project object */;
+}
