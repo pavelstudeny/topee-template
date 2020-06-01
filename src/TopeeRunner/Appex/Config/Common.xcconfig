@@ -4,6 +4,6 @@ CODE_SIGN_ENTITLEMENTS = $(SRCROOT)/Appex/Support/Appex.entitlements
 INFOPLIST_FILE = $(SRCROOT)/Appex/Support/Info.plist
 FRAMEWORK_SEARCH_PATHS = $(SRCROOT)/../../Carthage/Build/Mac/
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks
-PRODUCT_BUNDLE_IDENTIFIER = com.github.topee.Extension
+PRODUCT_BUNDLE_IDENTIFIER = com.github.topee.TopeeRunner.Extension
 PRODUCT_MODULE_NAME = TopeeExtension
 PRODUCT_NAME = TopeeExtension
