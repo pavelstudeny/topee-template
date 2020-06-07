@@ -2,4 +2,4 @@ FRAMEWORK_SEARCH_PATHS = $(inherited)
 MACOSX_DEPLOYMENT_TARGET = 10.11
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
 SDKROOT = macosx
-SWIFT_VERSION = 4.0
+SWIFT_VERSION = 5.1
