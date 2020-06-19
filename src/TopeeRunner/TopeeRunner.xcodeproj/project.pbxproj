@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82A02CC249CB821005DA535 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A82A02CB249CB821005DA535 /* background.js */; };
+		A82A02CE249CB868005DA535 /* topee-content.js in Resources */ = {isa = PBXBuildFile; fileRef = A82A02CD249CB868005DA535 /* topee-content.js */; };
 		A8517085248D6F9F00552E93 /* Topee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8517084248D6F9F00552E93 /* Topee.framework */; };
 		A8517086248D6F9F00552E93 /* Topee.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8517084248D6F9F00552E93 /* Topee.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF80A78A210F2F55002C6F3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF80A789210F2F55002C6F3F /* Cocoa.framework */; };
@@ -74,6 +76,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A82A02CB249CB821005DA535 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../dummy/background.js; sourceTree = "<group>"; };
+		A82A02CD249CB868005DA535 /* topee-content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "topee-content.js"; path = "../../Carthage/Build/Mac/Topee.framework/Versions/A/Resources/topee-content.js"; sourceTree = "<group>"; };
 		A8517084248D6F9F00552E93 /* Topee.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Topee.framework; path = ../../Carthage/Build/Mac/Topee.framework; sourceTree = "<group>"; };
 		EF80A726210F281D002C6F3F /* TopeeRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopeeRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF80A787210F2F55002C6F3F /* TopeeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopeeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +141,8 @@
 		EF80A71D210F281D002C6F3F = {
 			isa = PBXGroup;
 			children = (
+				A82A02CD249CB868005DA535 /* topee-content.js */,
+				A82A02CB249CB821005DA535 /* background.js */,
 				EFB69381211037BE00F402FC /* App */,
 				EF80A78B210F2F55002C6F3F /* Appex */,
 				EF80A788210F2F55002C6F3F /* Frameworks */,
@@ -395,6 +401,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82A02CE249CB868005DA535 /* topee-content.js in Resources */,
+				A82A02CC249CB821005DA535 /* background.js in Resources */,
 				EF80A797210F2F55002C6F3F /* ToolbarItemIcon.pdf in Resources */,
 				EF80A792210F2F55002C6F3F /* SafariExtensionViewController.xib in Resources */,
 			);
@@ -415,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Wraps content scripts to run at document end\n\"${SRCROOT}/../../Carthage/Checkouts/topee/src//Framework/Scripts/run-at-document-end.sh\" \\\n\"${SRCROOT}/../../dummy/content.js\" > \"${SRCROOT}/Appex/Resources/content.js\"\n";
+			shellScript = "# Wraps content scripts to run at document end\n\"${SRCROOT}/../../Carthage/Checkouts/topee/src/Framework/Scripts/run-at-document-end.sh\" \\\n\"${SRCROOT}/../../dummy/content.js\" > \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/content.js\"\n";
 		};
 		FD63C18D212C090400C8F21A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -428,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo Copying pam resources ...\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/html/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/html\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/_locales/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/_locales\nrsync -rtv $PROJECT_DIR/../../dummy/img/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/img\n";
+			shellScript = "echo Copying resources from $PROJECT_DIR/../../dummy to $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH ...\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/html/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/html\nrsync -rtv --exclude=topee-iframe-resources.js $PROJECT_DIR/../../dummy/_locales/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/_locales\nrsync -rtv $PROJECT_DIR/../../dummy/img/ $BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/img\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
